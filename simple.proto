@@ -1,0 +1,7 @@
+syntax = "proto3";
+package simple.v1;
+message Empty {}
+service SimpleService {
+    rpc Unary(Empty) returns (Empty) {}
+    rpc Stream(Empty) returns (stream Empty) {}
+}
